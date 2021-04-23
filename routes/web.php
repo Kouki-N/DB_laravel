@@ -10,6 +10,9 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+use Illuminate\Support\Facades\Route;
+
+Route::get('piyo', 'PiyoController@index');
 
 Route::get('/', function () {
     return view('welcome');
